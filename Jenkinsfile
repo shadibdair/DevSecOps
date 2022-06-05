@@ -23,6 +23,7 @@ pipeline {
 
     stage('Docker Build and Push') {
       steps {
+        // Give Jenkins access to push a image to docker hub
         withDockerRegistry([credentialsId: "docker-hub", url: ""]) {
           sh 'printenv'
           sh 'docker build -t shadidevsecops/numeric-app:""$GIT_COMMIT"" .'
