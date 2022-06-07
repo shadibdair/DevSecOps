@@ -32,6 +32,12 @@ pipeline {
       }
     }
 
+       stage('SonarQube - SAST') {
+      steps {
+        sh "mvn sonar:sonar -Dsonar.projectKey=numeric-application -Dsonar.host.url=http://devsecops-proj.norwayeast.cloudapp.azure.com:9000 -Dsonar.login=5747e5f518e50722086b9269283407c17080e06a"
+      }
+    }  
+
     stage('Docker Build and Push') {
       steps {
         // Give Jenkins access to push a image to docker hub
