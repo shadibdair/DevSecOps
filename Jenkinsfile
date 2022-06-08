@@ -7,6 +7,7 @@ pipeline {
               sh "mvn clean package -DskipTests=true"
               archive 'target/*.jar'
             }
+	}
 
     stage('Unit Tests - JUnit and Jacoco') {
       steps {
@@ -19,6 +20,7 @@ pipeline {
         sh "mvn org.pitest:pitest-maven:mutationCoverage"
       }
     }
+
        stage('SonarQube - SAST') {
       steps {
         withSonarQubeEnv('SonarQube') {
@@ -32,7 +34,7 @@ pipeline {
       }
     }
 
-        stage('Vulnerability Scan - Docker ') {
+     stage('Vulnerability Scan - Docker ') {
       steps {
         sh "mvn dependency-check:check"
       }
@@ -75,5 +77,4 @@ pipeline {
     // }
   }    
 
- } 
 }
