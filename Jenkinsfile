@@ -132,7 +132,7 @@ pipeline {
     }
 
     stage('Notifiction to Slack Channel') {
-	step {
+	steps {
 	  sh 'exit 0'
 	}
     }
