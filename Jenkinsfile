@@ -131,6 +131,12 @@ pipeline {
       }
     }
 
+    stage('Notifiction to Slack Channel') {
+	step {
+	  sh 'exit 0'
+	}
+    }
+
   }
 
   post {
