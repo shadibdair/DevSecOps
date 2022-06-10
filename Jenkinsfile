@@ -1,4 +1,4 @@
-@Library('slackshadi') _
+@Library('slack') _
 
 pipeline {
   agent any
