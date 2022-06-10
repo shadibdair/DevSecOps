@@ -1,5 +1,3 @@
-######## vars/sendNotification.groovy ######## 
-
 def call(String buildStatus = 'STARTED') {
  buildStatus = buildStatus ?: 'SUCCESS'
 
