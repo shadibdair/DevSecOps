@@ -139,6 +139,26 @@ pipeline {
 	  }
 	}
 
+    stage('K8S CIS Benchmark') {
+      steps {
+        script {
+
+          parallel(
+            "Master": {
+              sh "bash cis-master.sh"
+            },
+            "Etcd": {
+              sh "bash cis-etcd.sh"
+            },
+            "Kubelet": {
+              sh "bash cis-kubelet.sh"
+            }
+          )
+
+        }
+      }
+    }
+
     stage('Notifiction to Slack Channel') {
 	steps {
 	  sh 'exit 0'
