@@ -266,9 +266,16 @@ pipeline {
       }
     }
 
-    // failure {
+    failure {
+      script {
+        //Fetch information about  failed stage
+        def failedStages = getFailedStages(currentBuild)
+        env.failedStage = failedStages.failedStageName
+        env.emoji = ":x: :red_circle: :sos:"
+        sendNotification currentBuild.result
+      }
+    }
 
-    // }
   }
 
 }
