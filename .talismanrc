@@ -40,7 +40,7 @@ fileignoreconfig:
 - filename: cfg/rh-1.0/etcd.yaml
   checksum: 725fc512d2f52f10a4b745441e4bde21ff4f640a74993f5b42ad194c7e7a0f0e
 - filename: Jenkinsfile
-  checksum: 2f39b45eb7955b461e1c76dc08b8203860428b143ee27cc2eb1879fba8554d71
+  checksum: cc80c46f9f8170e000e69f03a9ea3d02e9310d1233da8e9ac03b84dd0dd3074a
 - filename: cfg/rh-1.0/master.yaml
   checksum: d386be6a79d565c8d1ab8490f394ed480c48c7cdc3c1699534d8b25b51d325e6
 version: ""
