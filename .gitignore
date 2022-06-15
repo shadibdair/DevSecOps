@@ -1,3 +1,5 @@
+php-vault-example/
+
 # Compiled class file
 *.class
 
@@ -28,3 +30,4 @@ bin
 target  
 
 cfg
+
