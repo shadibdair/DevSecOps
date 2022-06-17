@@ -1,5 +1,7 @@
 # kubernetes-devops-security
-shadi
+## All the Stages I've used on Jenkins:
+![Jenkins-Stages-Jobs](https://user-images.githubusercontent.com/43513994/174334271-0038d52f-417f-4bea-99b1-131edae7b391.png)
+
 ## Fork and Clone this Repo
 
 ## Clone to Desktop and VM
