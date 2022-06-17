@@ -55,7 +55,7 @@ pipeline {
   }
 
   stages {
-
+// Stage Build Aretifacts - Maven
     stage('Build Artifact - Maven') {
       steps {
         sh "mvn clean package -DskipTests=true"
