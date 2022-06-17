@@ -7,6 +7,10 @@
 ![Kiali](https://user-images.githubusercontent.com/43513994/174335709-2683a625-d2e7-429b-a48d-2ea8c4ce639e.png)
 ![Kiali2](https://user-images.githubusercontent.com/43513994/174335721-5ef1a8b3-9ca6-45aa-bdb3-02116dc9b9a1.png)
 
+## Kube-Scan
+#### Kube-Scan gives a risk score, from 0 (no risk) to 10 (high risk) for each workload. The risk is based on the runtime configuration of each workload (currently 20+ settings). The exact rules and scoring formula are part of the open-source framework KCCSS, the Kubernetes Common Configuration Scoring System.
+![Kube-Scan](https://user-images.githubusercontent.com/43513994/174335932-33961c83-7347-4e66-857d-bca0663ec276.png)
+
 
 ## Fork and Clone this Repo
 
