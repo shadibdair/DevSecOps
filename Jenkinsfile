@@ -88,7 +88,7 @@ pipeline {
         }
       }
     }
-
+// Vulenrability Scan - Docker
      stage('Vulnerability Scan - Docker') {
       steps {
         parallel(
