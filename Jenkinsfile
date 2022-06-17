@@ -218,7 +218,7 @@ pipeline {
         )
       }
     }
-
+// Stage Integration Tests
     stage('Integration Tests - PROD') {
       steps {
         script {
@@ -235,7 +235,7 @@ pipeline {
         }
       }
     }
-
+// Notification to Slack
     stage('Notifiction to Slack Channel') {
 	steps {
 	  sh 'exit 0'
