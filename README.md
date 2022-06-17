@@ -27,3 +27,6 @@
 `kubectl expose deploy node-app --name node-service --port 5000 --type ClusterIP`
 
 `curl node-service-ip:5000/plusone/99`
+
+## Inside the VM, You can see the proccess running:
+![Terminal ](https://user-images.githubusercontent.com/43513994/174336314-b0d33432-3b8c-45c9-ac1a-e2f91fd5fa60.png)
