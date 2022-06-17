@@ -62,13 +62,13 @@ pipeline {
         archive 'target/*.jar'
       }
     }
-
+// Stage Unit Tests - JUnit and JaCoCo
     stage('Unit Tests - JUnit and JaCoCo') {
       steps {
         sh "mvn test"
       }
     }
-
+// Stage Mutation Tests - PIT
     stage('Mutation Tests - PIT') {
       steps {
         sh "mvn org.pitest:pitest-maven:mutationCoverage"
